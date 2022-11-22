@@ -1,6 +1,7 @@
 # daily_c
 * C언어 작업 관련 테스트, 문제풀이 레파지토리
 * 참고 : https://rasino.tistory.com/307
+* 문제풀이 : https://github.com/namjaeyoon/c.dojang
 
 &nbsp;
 
