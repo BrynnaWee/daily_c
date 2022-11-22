@@ -23,6 +23,9 @@
     - 각 언어별로 작업 폴더를 따로 만들어야함.
     - 방법 :
         - 메뉴 [파일] - [작업 영역을 다른 이름으로 저장](Save WorkSpace As...)
+<br>
+<br>
+-  맨 처음 gcc설치 및 vcode에서 c/c++ 익스텐션 설치 방법, task.json설치 방법은 구글검색해서 따라하면 됩니다.
 
 &nbsp;
 
@@ -31,6 +34,32 @@
 &nbsp;
  
 ## 설정 방법
+
+- vscode extention에서 c/c++ (제작자 microsoft)를 인스톨
+- c_cpp_properties.json 편집
+    ```json
+    {
+    "configurations": [
+            {
+                "name": "Win32",
+                "includePath": [
+                    "${workspaceFolder}/**",
+                    "C:/Program Files/mingw64/include"
+                ],
+                "defines": [
+                    "_DEBUG",
+                    "UNICODE",
+                    "_UNICODE"
+                ],
+                "compilerPath": "C:/Program Files/mingw64/bin/g++.exe", //내pc에 설치된 경로를 넣어줌
+                "cStandard": "c17",
+                "cppStandard": "c++17",
+                "intelliSenseMode": "windows-gcc-x86"
+            }
+        ],
+        "version": 4
+    }
+    ````
 
 - 단축키 설정(**아래의 빌드설정을 마친 후에 설정해야함**)
     - 메뉴 [파일] - [기본설정] - [바로 가기 키]
@@ -79,6 +108,7 @@
     - [작업템플릿]이 나오면, [Others 임의의 외부 명령을 실행하는 예] 선택
     - 그러면 tasks.json파일이 생성됨
     - 아래와 같이 코드를 덮어쓰면 됨.
+    - [주의사항] gcc.exe가 있는 경로 내 PC에 맞게 적어주어야함.
     ````json
     {
     "version": "2.0.0",
@@ -149,7 +179,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe 활성 파일 빌드",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "command": "C:\\Program Files\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -168,7 +198,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe 활성 파일 빌드",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -192,7 +222,7 @@
             {
                 "type": "cppbuild",
                 "label": "C/C++: gcc.exe 활성 파일 빌드",
-                "command": "C:\\MinGW\\bin\\gcc.exe",
+                "command": "C:\\Program Files\\mingw64\\bin\\gcc.exe",
                 "args": [
                     "-g",
                     "${file}",
@@ -212,7 +242,7 @@
                 //     "isDefault": true
                 // },
 
-                "detail": "컴파일러: C:\\MinGW\\bin\\gcc.exe"
+                "detail": "컴파일러: C:\\Program Files\\mingw64\\bin\\gcc.exe"
             }
         ]
     }
