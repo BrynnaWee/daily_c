@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*.js": "javascript",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "float.h": "c",
+        "stdio.h": "c"
     }
 }
