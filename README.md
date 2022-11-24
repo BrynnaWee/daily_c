@@ -1,7 +1,9 @@
 # daily_c
 * C언어 작업 관련 테스트, 문제풀이 레파지토리
-* 참고 : https://rasino.tistory.com/307
-* 문제풀이 : https://github.com/namjaeyoon/c.dojang
+* vscode에서 c언어 사용 설정 참고 : https://rasino.tistory.com/307
+* 기본 개념 정리 소스 출처 : https://dojang.io/course/view.php?id=2
+* 문제풀이 출처 : https://github.com/namjaeyoon/c.dojang
+
 
 &nbsp;
 
