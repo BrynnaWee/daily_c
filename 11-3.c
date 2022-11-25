@@ -1,11 +1,11 @@
-#define _CRT_SECURE_NO_WARNINGS    // scanf º¸¾È °æ°í·Î ÀÎÇÑ ÄÄÆÄÀÏ ¿¡·¯ ¹æÁö
+#define _CRT_SECURE_NO_WARNINGS    // scanf ë³´ì•ˆ ê²½ê³ ë¡œ ì¸í•œ ì»´íŒŒì¼ ì—ëŸ¬ ë°©ì§€
 #include <stdio.h>
 
 int main()
 {
     float num1;
 
-    printf("½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+    // printf("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : "); //scanfê°€ ì‹¤í–‰ë˜ê¸° ì „ì— printfí•¨ìˆ˜ê°€ ìˆìœ¼ë©´ ì—ëŸ¬ë°œìƒ
     scanf("%f", &num1);
 
     printf("%f", num1);
@@ -13,15 +13,12 @@ int main()
     return 0;
 }
 
-/*Âü°í
-    ¿©±â¼­ º¯¼ö¸¦ double·Î ¼±¾ğÇß´Ù¸é scanf¿¡´Â ¼­½Ä ÁöÁ¤ÀÚ·Î %lf¸¦ ³Ö°í, 
-    long double·Î ¼±¾ğÇß´Ù¸é %Lf¸¦ ³Ö½À´Ï´Ù.
-    (doubleÀº printf·Î Ãâ·ÂÇÒ ¶§ %f¸¦ ½áµµ µÇÁö¸¸ scanf´Â %lf¸¦ ½á¾ß ÇÕ´Ï´Ù).
-
-
+/*ì°¸ê³ 
+    ì—¬ê¸°ì„œ ë³€ìˆ˜ë¥¼ doubleë¡œ ì„ ì–¸í–ˆë‹¤ë©´ scanfì—ëŠ” ì„œì‹ ì§€ì •ìë¡œ %lfë¥¼ ë„£ê³ , 
+    long doubleë¡œ ì„ ì–¸í–ˆë‹¤ë©´ %Lfë¥¼ ë„£ìŠµë‹ˆë‹¤.
+    (doubleì€ printfë¡œ ì¶œë ¥í•  ë•Œ %fë¥¼ ì¨ë„ ë˜ì§€ë§Œ scanfëŠ” %lfë¥¼ ì¨ì•¼ í•©ë‹ˆë‹¤).
     double num1;
-    scanf("%lf", &num1);    // ÀÚ·áÇüÀÌ doubleÀÏ ¶§´Â %lf
-
+    scanf("%lf", &num1);    // ìë£Œí˜•ì´ doubleì¼ ë•ŒëŠ” %lf
     long double num2;
-    scanf("%Lf", &num2);    // ÀÚ·áÇüÀÌ long doubleÀÏ ¶§´Â %Lf
+    scanf("%Lf", &num2);    // ìë£Œí˜•ì´ long doubleì¼ ë•ŒëŠ” %Lf
 */

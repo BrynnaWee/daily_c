@@ -5,7 +5,7 @@ int main()
 {
     int num1, num2;
 
-    printf("정수를 2개 입력하세요 : ");
+    // printf("정수를 2개 입력하세요 : ");
     
     scanf("%d %d", &num1, &num2);
 
