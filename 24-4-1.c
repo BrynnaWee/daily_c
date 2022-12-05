@@ -14,20 +14,19 @@ int main()
                             */
     
     if(flag & 1) // &연산자 : 해당 비트의 플래그가 켜져있는지 확인하는 연산자.
-        printf("0000 0001 flag 켜져있음\n");
+        printf("0000 0001 flag 켜져있음(on)\n");
     else
-        printf("0000 0001 flag 켜져있음\n");
-
+        printf("0000 0001 flag 꺼져있음(off)\n");
     
-    if(flag & 2)
-        printf("0000 0010 flag 켜져있음\n");
+    if(flag & 2) // &연산자로 0000 0010 비트가 켜져있는지 확인한다.
+        printf("0000 0010 flag 켜져있음(on)\n");
     else
-        printf("0000 0010 flag 켜져있음\n");
+        printf("0000 0010 flag 꺼져있음(off)\n");
    
-    if(flag & 4)
-        printf("0000 0100 flag 켜져있음\n");
+    if(flag & 4) // &연산자로 0000 0100 비트가 켜져있는지 확인한다. 
+        printf("0000 0100 flag 켜져있음(on)\n");
     else
-        printf("0000 0100 flag 켜져있음\n");
+        printf("0000 0100 flag 꺼져있음(off)\n");
 
     return 0;
 }
